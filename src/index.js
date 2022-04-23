@@ -24,6 +24,7 @@ class Interaction {
     }
 
     #VALIDATIONMSGS = {
+        CANVASDIMENSIONS: 'Canvas width and height should not be 0',
         INVALIDCOMMAND: 'Invalid Command!',
         NOTINBOUND: 'Coordinates are not inbound!',
         NOCANVAS: 'No Canvas found. Create canvas first!',
@@ -43,6 +44,10 @@ class Interaction {
         // Handle for canvas data
         let data = this.handleCanvasData(command);
         if (data) {
+            if (data.w <= 0 || data.h <= 0) {
+                console.log(this.#VALIDATIONMSGS.CANVASDIMENSIONS);
+                return false;
+            }
             this.canvas = new Canvas(data.w, data.h);
             this.canvas.draw();
             return;

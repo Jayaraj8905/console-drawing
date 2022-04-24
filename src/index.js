@@ -44,11 +44,12 @@ class Interaction {
         // Handle for canvas data
         let data = this.handleCanvasData(command);
         if (data) {
-            if (data.w <= 0 || data.h <= 0) {
-                console.log(this.#VALIDATIONMSGS.CANVASDIMENSIONS);
-                return false;
-            }
             this.canvas = new Canvas(data.w, data.h);
+            if (!this.canvas.board) {
+                this.canvas = null; // Reset the canvas instance
+                console.log(this.#VALIDATIONMSGS.CANVASDIMENSIONS);
+                return;
+            }
             this.canvas.draw();
             return;
         }

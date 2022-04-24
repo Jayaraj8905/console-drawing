@@ -6,6 +6,9 @@ export class Canvas {
         empty: ' '
     }
     constructor(width, height) {
+        if (width <= 0 || height <= 0) {
+            return null;
+        }
         this.width = width;
         this.height = height;
         this.board = []; // [y,x]

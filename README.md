@@ -45,7 +45,6 @@ npm start
 ```sh
 npm test
 ```
-Test cases are not added yet due to configuration issue.
 
 ## Used Libraries
 

@@ -3,8 +3,8 @@
 // 1. PROMPTER - https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts
 // 2. VALIDATION HANDLER
 // 3. CANVAS BOARD
-// 4. RECTANGLE
-// 5. SQUARE
+// 4. LINE
+// 5. RECTANGLE
 // 6. FILL - FLOOD FILL ALGORITHM
 // 7. CANVAS DRAWING
 

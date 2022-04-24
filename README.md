@@ -63,10 +63,10 @@ npm test
 * Canvas is a two dimensional array which will hold the data based on the coordinates.
 
 ### Draw Line
-* Line is drawn by changing the coordinates to `x` based on the given coordinates vertically and horizontally
+* Line is drawn by placing the `x` character in the two dimensional array based on the coordinates.
 
 ### Draw Rectangle
-* Rectangle is drawn by drawing the line based on the coordinates
+* Rectangle is drawn by drawing the multiple lines based on the coordinates.
 
 ### Bucket Fill
 * Bucket fill is achieved by `Flood Fill` algorithm.
